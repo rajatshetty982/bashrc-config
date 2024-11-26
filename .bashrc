@@ -4,9 +4,10 @@ iatest=$(expr index "$-" i)
 #######################################################
 # SOURCED ALIAS'S AND SCRIPTS BY zachbrowne.me
 #######################################################
-if [ -f /usr/bin/fastfetch ]; then
-	fastfetch
-fi
+# Uncomment these 3 lines below if you want the fastfetch to pop everytime on startup
+#if [ -f /usr/bin/fastfetch ]; then
+#	fastfetch
+#fi
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -143,6 +144,8 @@ alias freshclam='sudo freshclam'
 alias vi='nvim'
 alias svi='sudo vi'
 alias vis='nvim "+set si"'
+alias g++20='g++ -std=c++20 -Wall'
+alias g++='g++ -std=c++23 -Wall'
 
 
 # Change directory aliases
